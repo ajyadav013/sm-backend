@@ -15,9 +15,9 @@ import datetime
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 try:
-    from .local import (DEBUG, SECRET_KEY, FACEBOOK_APP_SECRET, DATABASES, ALLOWED_HOSTS)
+    from .local import (DEBUG, SECRET_KEY, DATABASES, ALLOWED_HOSTS)
 except ImportError:
-    from .production import (DEBUG, SECRET_KEY, FACEBOOK_APP_SECRET, DATABASES, ALLOWED_HOSTS)
+    from .production import (DEBUG, SECRET_KEY, DATABASES, ALLOWED_HOSTS)
 
 from core.celery import app as celery_app
 
