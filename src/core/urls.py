@@ -23,7 +23,6 @@ from home import views as homeView
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^auth', include('authentication.urls')),
-    url(r'^social', include('social.urls')),
     url(r'^$', homeView.Home.as_view(), name='home'),
 ]
 if not settings.DEBUG:
